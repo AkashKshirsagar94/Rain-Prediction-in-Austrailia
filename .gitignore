@@ -1,2 +1,6 @@
+# Ignore these directories
 rainfallprediction.eng-info/
 __pycache__/
+logs/
+
+# Ignore python files
