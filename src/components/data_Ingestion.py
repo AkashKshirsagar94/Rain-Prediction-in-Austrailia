@@ -9,6 +9,8 @@ from src.logger import logging
 
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig
+from src.components.model_trainer import ModelTrainerConfig
+from src.components.model_trainer import ModelTrainer
 
 
 @dataclass
@@ -40,3 +42,6 @@ if __name__== "__main__":
 
     data_transformation=DataTransformation()
     arr,_=data_transformation.initiate_data_transformation(raw_data)
+
+    model_trainer = ModelTrainer()
+    print(model_trainer.initiate_model_trainer(arr))
